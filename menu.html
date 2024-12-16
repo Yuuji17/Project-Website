@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeaCup.com</title>
+    <link rel="shortcut icon" href="weblogo/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <!--website header-->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="ri-menu-line"></i>
+        </label>
+        <ul class = "nav_tabs">
+            <li><a href="index-new.html" class="home">Home</a></li>
+            <li><a href="menu.html" class="menu">Menu</a></li>
+            <li><a href="souvenir.html" class="souvenir">Souvenir</a></li>
+            <li><a href="more.html" class="more">More</a></li>
+        </ul> 
+    </nav>
+    <!--All Product Container-->
+    <div class="category">
+            <h2 class="cat">Sea Cup Menu </h2>
+            <!--Sea Bleander Container-->
+            <div class ="sea_blender">
+                <h2>Sea Cup blends</h2>
+
+                <!--Soda Pop and Fruity Yakult Container-->
+                <div class ="soda_fruity_container">
+
+                    <!--Soda Pop Container-->
+                    <div class ="soda_pop">
+                        <h3>Soda Pop</h3>
+                        <div class = "soda_product">
+                            <div class="blueberry">
+                                <img src="pictures/blueberry soda.jpg" alt="Blueberry Soda Pop" onclick="openModal('blueberry')">
+                                <span>Blueberry Soda Pop</span>
+                                <span>₱ 90</span>
+                            </div>
+                            <div class="greenapple">
+                                <img src="pictures/green apple soda.jpg" alt="GreenApple Soda Pop" onclick="openModal('greenapple')">
+                                <span>GreenApple Soda Pop</span>
+                                <span>₱ 90</span>
+                            </div>
+                            <div class="kiwi">
+                                <img src="pictures/kiwi soda.jpg" alt="Kiwi Soda Pop" onclick="openModal('kiwi')">
+                                <span>Kiwi Soda Pop</span>
+                                <span>₱ 90</span>
+                            </div>
+                            <div class="lychee">
+                                <img src="pictures/lychee soda.jpg" alt="Lychee Soda Pop" onclick="openModal('lychee')">
+                                <span>Lychee Soda Pop</span>
+                                <span>₱ 90</span>
+                            </div>
+                            <div class="strawberry">
+                                <img src="pictures/strawberry soda.jpg" alt="Strawberry Soda Pop" onclick="openModal('strawberry')">
+                                <span>Strawberry Soda Pop</span>
+                                <span>₱ 90</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Fruity Yakult Container-->
+                    <div class ="fruity_yakult">
+                        <h3>Fruity Yakult</h3>
+                        <div class = "yakult_product">
+                            <div class="blueberry_yakult">
+                                <img src="fruity yakult/blueberry fruity.jpg" alt="Blueberry Fruity" onclick="openModal('blueberry_yakult')">
+                                <a class="best_yakult1"><img src="weblogo/seacup banner.png"></a>
+                                <span>Blueberry Fruity</span>
+                                <span>Yakult</span>
+                                <span>₱ 100</span>
+                            </div>
+                            <div class="greenapple_yakult">
+                                <img src="fruity yakult/green apple fruity.jpg" alt="GreenApple Fruity" onclick="openModal('greenapple_yakult')">
+                                <a class="best_yakult2"><img src="weblogo/seacup banner.png"></a>
+                                <span>GreenApple Fruity</span>
+                                <span>Yakult</span>
+                                <span>₱ 100</span>
+                            </div>
+                            <div class="kiwi_yakult">
+                                <img src="fruity yakult/kiwi fruity.jpg" alt="Kiwi Fruity" onclick="openModal('kiwi_yakult')"> 
+                                <a class="best_yakult3"><img src="weblogo/seacup banner.png"></a>
+                                <span>Kiwi Fruity</span>
+                                <span>Yakult</span>
+                                <span>₱ 100</span>
+                            </div>
+                            <div class="lychee_yakult">
+                                <img src="fruity yakult/lychee fruity.jpg" alt="Lychee Fruity" onclick="openModal('lychee_yakult')">
+                                <a class="best_yakult4"><img src="weblogo/seacup banner.png"></a>
+                                <span>Lychee Fruity</span>
+                                <span>Yakult</span>
+                                <span>₱ 100</span>
+                            </div>
+                            <div class="strawberry_yakult">
+                                <img src="fruity yakult/strawberry fruity.jpg" alt="Strawberry Fruity" onclick="openModal('strawberry_yakult')">
+                                <a class="best_yakult4"><img src="weblogo/seacup banner.png"></a>
+                                <span>Strawberry Fruity </span>
+                                <span>Yakult</span>
+                                <span>₱ 100</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                
+                <!--Specialty Coffee Container-->
+                <div class="coffee_container">
+                    <h2>Specialty Cofee</h2>
+
+                    <!--Hot and Iced Coffee Container-->
+                    <div class="hot_iced_coffee_container">
+
+                        <!--Hot coffee Container-->
+                        <div class="hot_coffee">
+                            <h3>Hot Coffee</h3>
+
+                            <!--Hot coffee Product-->
+                            <div class="hot_coffee_product">
+                                <div class="coffee_1">
+                                    <img src="hot coffee pict/coffee1.jpg" alt="Cofee Caramel" onclick="openModal('coffee_1')">
+                                    <a class="best_hot1"><img src="weblogo/seacup banner.png"></a>
+                                    <span>Cofee Caramel</span>
+                                    <span>₱ 100</span>
+                                </div>
+                                
+                                <div class="coffee_5">
+                                    <img src="hot coffee pict/coffee5.jpg" alt="Americano" onclick="openModal('coffee_5')">
+                                    <a class="best_hot"><img src="weblogo/seacup banner.png"></a>
+                                    <span>Americano</span>
+                                    <span>₱ 100</span>
+                                </div>
+                                
+                                <div class="coffee_3">
+                                    <img src="hot coffee pict/coffee3.jpg" alt="Cafe Matcha Latte" onclick="openModal('coffee_3')">
+                                    <span>Cafe Matcha Latte</span>
+                                    <span>₱ 100</span>
+                                </div>
+                                
+                                <div class="coffee_4">
+                                    <img src="hot coffee pict/coffee4.jpg" alt="Choco" onclick="openModal('coffee_4')">
+                                    <span>Hot Choco</span>
+                                    <span>₱ 100</span>
+                                </div>
+
+                                <div class="coffee_2">
+                                    <img src="hot coffee pict/coffee2.jpg" alt="Mocha" onclick="openModal('coffee_2')">
+                                    <span>Hot Mocha</span>
+                                    <span>₱ 100</span>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+
+                        <!--Iced Coffee Container-->
+                        <div class="iced_coffee">
+                            <h3>Iced Coffee</h3>
+
+                            <!--Iced Coffee Product-->
+                            <div class="iced_coffee_product">
+                                <div class="iced_coffee1">
+                                    <img src="iced coffee pict/iced coffee1.jpg" alt="Iced Matcha Berry" onclick="openModal('iced_coffee1')">
+                                    <span>Iced Matcha Berry</span>
+                                    <a class="best_iced"><img src="weblogo/seacup banner.png"></a>
+                                    <span>₱ 140</span>
+                                </div>
+                                <div class="iced_coffee2">
+                                    <img src="iced coffee pict/iced coffee2.jpg" alt="Iced Creamy Matcha" onclick="openModal('iced_coffee2')">
+                                    <span>Iced Creamy Matcha</span>
+                                    <a class="best_iced1"><img src="weblogo/seacup banner.png"></a>
+                                    <span>₱ 135</span>
+                                </div>
+                                <div class="iced_coffee3">
+                                    <img src="iced coffee pict/iced coffee3.jpg" alt="Iced Choco Berry" onclick="openModal('iced_coffee3')">
+                                    <span>Iced Choco Berry</span>
+                                    <span>₱ 140</span>
+                                </div>
+                                <div class="iced_coffee4">
+                                    <img src="iced coffee pict/iced coffee4.jpg" alt="Iced Choco Hazelnut" onclick="openModal('iced_coffee4')">
+                                    <span>Iced Choco HazelNut</span>
+                                    <a class="best_iced2"><img src="weblogo/seacup banner.png"></a>
+                                    <span>₱ 145</span>
+                                </div>
+                                <div class="iced_coffee5">
+                                    <img src="iced coffee pict/iced coffee5.jpg" alt="Iced Caramel Latte" onclick="openModal('iced_coffee5')">
+                                    <span>Iced Caramel Latte</span>
+                                    <a class="best_iced3"><img src="weblogo/seacup banner.png"></a>
+                                    <span>₱ 145</span>
+                                </div>
+                                <div class="iced_coffee6">
+                                    <img src="iced coffee pict/iced coffee6.jpg" alt="Iced Cafe Latte" onclick="openModal('iced_coffee6')">
+                                    <span>Iced Cafe Latte</span>
+                                    <span>₱ 130</span>
+                                </div>
+                                <div class="iced_coffee7">
+                                    <img src="iced coffee pict/iced coffee7.jpg" alt="Iced Ichigo Cafe Latte" onclick="openModal('iced_coffee7')">
+                                    <span>Iced Ichigo Cafe Latte</span>
+                                    <a class="best_iced4"><img src="weblogo/seacup banner.png"></a>
+                                    <span>₱ 140</span>
+                                </div>
+                                <div class="iced_coffee8">
+                                    <img src="iced coffee pict/iced coffee8.jpg" alt="Iced Dirty Matcha" onclick="openModal('iced_coffee8')">
+                                    <span>Iced Dirty Matcha</span>
+                                    <span>₱ 140</span>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+
+            </div>
+            <!--Other Container-->
+            <div class="other_main_container">
+                <h2>Others</h2>
+                <div class="others_container">
+                    <!--Pasta Product-->
+                    <div class="pasta">
+                        <h3>Pasta</h3>
+                        <div class="pasta_product">
+                            <div class="pasta1">
+                                <img src="others menu pict/pasta1.jpg" alt="Carbonara" onclick="openModal('pasta1')">
+                                <span>Carbonara</span>
+                                <span>₱ 140</span>
+                            </div>
+                            <div class="pasta2">
+                                <img src="others menu pict/pasta2.jpg" alt="Beef Italian" onclick="openModal('pasta2')">
+                                <span>Beef Italian</span>
+                                <span>₱ 140</span>
+                            </div>
+                            <div class="pasta3">
+                                <img src="others menu pict/pasta3.jpg" alt="Pesto"
+onclick="openModal('pasta3')">
+                                <span>Pesto</span>
+                                <span>₱ 140</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Waffle Product-->
+                    <div class="waffle">
+                        <h3>Waffle</h3>
+                        <div class="waffle_product">
+                            <div class="waffle1">
+                                <img src="others menu pict/waffle1.jpg" alt="Mango Overload" onclick="openModal('waffle1')">
+                                <span>Mango Overload</span>
+                                <span>₱ 140</span>
+                            </div>
+                            <div class="waffle2">
+                                <img src="others menu pict/waffle2.jpg" alt="Choco Overload" onclick="openModal('waffle2')">
+                                <span>Choco Overload</span>
+                                <span>₱ 100</span>
+                            </div>
+                            <div class="waffle3">
+                                <img src="others menu pict/waffle3.jpg" alt="Cookies Overload" onclick="openModal('waffle3')">
+                                <span>Cookies Overload</span>
+                                <span>₱ 140</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+    </div> 
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Product Image" style="width: 100%; max-width: 300px;">
+            <h3 id="modalTitle"></h3>
+            <p id="modalPrice"></p>
+            <div class="quantity-container">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <button class="buy-button">Buy</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

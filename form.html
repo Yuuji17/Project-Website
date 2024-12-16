@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill-Up Form</title>
+    <link rel="stylesheet" href="form.css"> 
+    <script src="order.js" defer></script> 
+
+</head>
+<body>
+    <div class="order-container">
+        <h2>Order Details</h2>
+        <form id="orderForm" onsubmit="submitOrder(event)" action="https://api.web3forms.com/submit" method="POST">
+         <!-- Product Info -->
+         <div class="product-info">
+            <h3 id="productTitle"></h3>
+            <img id="productImage" src="" alt="Product Image" style="width: 100px; height: 100px;">
+            <p id="productPrice"></p>
+
+            <!-- Hidden fields for product info -->
+            <input type="hidden" name="productTitle" id="productTitleInput" value="">
+            <input type="hidden" name="productPrice" id="productPriceInput" value="">
+        </div>
+          
+        <input type="hidden" name="access_key" value="dee642e6-99fd-4255-8889-f3791e0056d6">
+            <!-- Customer Information -->
+            <div class="customer-info">
+                <label for="customerName">Full Name:</label>
+                <input type="text" id="customerName" name="customerName" required><br>
+        
+                <label for="customerAddress">Address:</label>
+                <input type="text" id="customerAddress" name="customerAddress" required><br>
+        
+                <label for="customerPhone">Phone Number:</label>
+                <input type="text" id="customerPhone" name="customerPhone" required><br>
+        
+                <label for="customerEmail">Email Address:</label>
+                <input type="email" id="customerEmail" name="customerEmail" required><br>
+            </div>
+        
+            <!-- Order Details -->
+            <div class="order-details">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" required><br>
+        
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="cash">Cash</option>
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select><br>
+            </div>
+        
+            <button type="submit" class="submit-order">Submit Order</button>
+        </form>
+    </div>
+</body>
+</html>

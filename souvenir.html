@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeaCup.com</title>
+    <link rel="shortcut icon" href="weblogo/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="souvenir.css">
+</head>
+<body>
+    <!--Website Header-->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="ri-menu-line"></i>
+        </label>
+        <ul class = "nav_tabs">
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="menu.html" class="menu">Menu</a></li>
+            <li><a href="souvenir.html" class="souvenir">Souvenir</a></li>
+            <li><a href="more.html" class="more">More</a></li>
+        </ul> 
+    </nav>
+   
+    <!-- All Souvenir Container -->
+    <div class="title">
+        <h2>Souvenir</h2>
+    </div>
+    <div class="souvenir_container">
+        <div class="souvenir1" onclick="openModal('souvenir1')">
+            <img src="others menu pict/souvenir1.jpeg" alt="Bracelets/Anklets">
+            <span>Bracelets/Anklets</span>
+        </div>
+        <div class="souvenir2" onclick="openModal('souvenir2')">
+            <img src="others menu pict/souvenir2.jpg" alt="Necklace/Earrings">
+            <span>Necklace/Earrings</span>
+        </div>
+        <div class="souvenir3" onclick="openModal('souvenir3')">
+            <img src="others menu pict/souvenir3.jpg" alt="HandCrafted Novelties">
+            <span>HandCrafted Novelties</span>
+        </div>
+    </div>
+
+    <!-- T-Shirts Section -->
+    <div class="tshirt_header">
+        <h2>T-Shirts</h2>
+    </div>
+    <div class="tshirt">
+        <div class="tshirt1" onclick="openModal('tshirt1')">
+            <img src="others menu pict/tshirt1.png" alt="T-Shirt 1">
+        </div>
+        <div class="tshirt2" onclick="openModal('tshirt2')">
+            <img src="others menu pict/tshirt2.png" alt="T-Shirt 2">
+        </div>
+        <div class="tshirt3" onclick="openModal('tshirt3')">
+            <img src="others menu pict/tshirt3.png" alt="T-Shirt 3">
+        </div>
+        <div class="tshirt4" onclick="openModal('tshirt4')">
+            <img src="others menu pict/tshirt4.png" alt="T-Shirt 4">
+        </div>
+        <div class="tshirt5" onclick="openModal('tshirt5')">
+            <img src="others menu pict/tshirt5.png" alt="T-Shirt 5">
+        </div>
+        <div class="tshirt6" onclick="openModal('tshirt6')">
+            <img src="others menu pict/tshirt6.png" alt="T-Shirt 6">
+        </div>
+        <div class="tshirt7" onclick="openModal('tshirt7')">
+            <img src="others menu pict/tshirt7.png" alt="T-Shirt 7">
+        </div>
+    </div>
+    
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Product Image" style="width: 100%; max-width: 300px;">
+            <h3 id="modalTitle"></h3>
+            <p id="modalPrice"></p>
+            <div class="quantity-container">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+            <button class="buy-button">Buy</button>
+        </div>
+    </div>
+
+    <script src="souvenir.js"></script>
+</body>
+</html>

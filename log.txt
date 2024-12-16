@@ -1,0 +1,66 @@
+Array
+(
+    [productTitle] => Blueberry Soda Pop
+    [productPrice] => ₱ 90
+    [quantity] => 1
+    [customerName] => era
+    [customerEmail] => era@gmail.com
+    [customerAddress] => tcn
+    [customerPhone] => 0911233123423
+    [paymentMethod] => cash
+)
+Array
+(
+    [productTitle] => Blueberry Soda Pop
+    [productPrice] => ₱ 90
+    [quantity] => 1
+    [customerName] => era
+    [customerEmail] => era@gmail.com
+    [customerAddress] => tcn
+    [customerPhone] => 0911233123423
+    [paymentMethod] => cash
+)
+Array
+(
+    [productTitle] => Blueberry Soda Pop
+    [productPrice] => ₱ 90
+    [quantity] => 1
+    [customerName] => era
+    [customerEmail] => era@gmail.com
+    [customerAddress] => tcn
+    [customerPhone] => 0911233123423
+    [paymentMethod] => cash
+)
+Array
+(
+    [productTitle] => Blueberry Soda Pop
+    [productPrice] => ₱ 90
+    [quantity] => 1
+    [customerName] => era
+    [customerEmail] => era@gmail.com
+    [customerAddress] => tcn
+    [customerPhone] => 0911233123423
+    [paymentMethod] => cash
+)
+Array
+(
+    [productTitle] => Blueberry Soda Pop
+    [productPrice] => ₱ 90
+    [quantity] => 1
+    [customerName] => era
+    [customerEmail] => era@gmail.com
+    [customerAddress] => tcn
+    [customerPhone] => 0911233123423
+    [paymentMethod] => cash
+)
+Array
+(
+    [productTitle] => Blueberry Soda Pop
+    [productPrice] => ₱ 90
+    [quantity] => 1
+    [customerName] => era
+    [customerEmail] => era@gmail.com
+    [customerAddress] => tcn
+    [customerPhone] => 0911233123423
+    [paymentMethod] => cash
+)
